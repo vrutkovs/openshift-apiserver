@@ -1,0 +1,4429 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10876"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-75f48f484b-p6s8s
+    to ip-10-0-44-172.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver-75f48f484b-p6s8s.178726d6986b8ee6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10884"
+    uid: 276638ef-608e-4f02-8a72-114d4adfc258
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:08Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10890"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:08Z"
+  message: Add eth0 [10.128.0.29/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:08Z"
+    name: apiserver-75f48f484b-p6s8s.178726d6b095ac2e
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10917"
+    uid: e03ac6cc-31cb-4757-b9b4-17a55ec89ed1
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:08Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:08Z"
+  message: Pulling image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:08Z"
+    name: apiserver-75f48f484b-p6s8s.178726d6b2433ef1
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10919"
+    uid: 0ccb98b8-b336-463a-863c-90449758babe
+  reason: Pulling
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Successfully pulled image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    in 2.771s (2.771s including waiting)
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-p6s8s.178726d757793edf
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11073"
+    uid: 7b45fffd-a2be-4868-a07a-ac24e74f77f6
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-p6s8s.178726d764e89019
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11088"
+    uid: aeb54957-f4a7-4fb5-9731-157aa0882aec
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-p6s8s.178726d76a41a99a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11095"
+    uid: 7f5009a2-c590-4363-a0e5-357398856baa
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:12Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:12Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:12Z"
+    name: apiserver-75f48f484b-p6s8s.178726d7979e4f7d
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11111"
+    uid: 7b9917b4-5fc1-4925-b4f6-a0607fd43846
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:12Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:12Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:12Z"
+    name: apiserver-75f48f484b-p6s8s.178726d7a6645563
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11118"
+    uid: c63ca357-8899-47a4-96c8-23b4aeeacb89
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:12Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:12Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:12Z"
+    name: apiserver-75f48f484b-p6s8s.178726d7a99d6367
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11119"
+    uid: cd3f4e81-5a3b-4383-96d4-367685efce76
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:13Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:13Z"
+  message: |+
+    Startup probe error: HTTP probe failed with statuscode: 500
+    body: [+]ping ok
+    [+]log ok
+    [-]etcd failed: reason withheld
+    [+]poststarthook/generic-apiserver-start-informers ok
+    [+]poststarthook/priority-and-fairness-config-consumer ok
+    [+]poststarthook/priority-and-fairness-filter ok
+    [+]poststarthook/storage-object-count-tracker-hook ok
+    [+]poststarthook/openshift.io-StartUserInformer ok
+    [+]poststarthook/openshift.io-StartOAuthInformer ok
+    [+]poststarthook/openshift.io-StartTokenTimeoutUpdater ok
+    healthz check failed
+
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:13Z"
+    name: apiserver-75f48f484b-p6s8s.178726d7d7dd4616
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11131"
+    uid: 95050333-f79d-4478-90b5-60ab78c49e02
+  reason: ProbeError
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:13Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:13Z"
+  message: 'Startup probe failed: HTTP probe failed with statuscode: 500'
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:13Z"
+    name: apiserver-75f48f484b-p6s8s.178726d7d7ddccb6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11132"
+    uid: a619840a-d56f-4c5d-b190-a97b7a28188c
+  reason: Unhealthy
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:40Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10880"
+    uid: 30e01efc-ab39-470a-9391-d2a025a3ae40
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:40Z"
+  message: Stopping container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-75f48f484b-p6s8s.178726ec4445c512
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14748"
+    uid: 4bf2eaa3-3681-489e-b1c8-a8eb5d241502
+  reason: Killing
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Received signal to terminate, becoming unready, but keeping serving
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-75f48f484b-p6s8s.178726ec4584b44a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14757"
+    uid: 9528c13e-9221-48f8-9c6e-544f9f7e81d0
+  reason: TerminationStart
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-p6s8s
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: The minimal shutdown duration of 0s finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-75f48f484b-p6s8s.178726ec46336077
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14764"
+    uid: 405dc445-c208-4cc7-972e-1f81e9357648
+  reason: TerminationMinimalShutdownDurationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-p6s8s
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Server has stopped listening
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-75f48f484b-p6s8s.178726ec468a3a5b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14765"
+    uid: e198d507-7578-42eb-b6a1-8070d7f7fbd3
+  reason: TerminationStoppedServing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-p6s8s
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pre-shutdown hooks have been finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-75f48f484b-p6s8s.178726ec46d531e9
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14767"
+    uid: a1d54a6c-cd04-458a-ad9c-3842c4ffbbc7
+  reason: TerminationPreShutdownHooksFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-p6s8s
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-p6s8s
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pending requests processed
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-75f48f484b-p6s8s.178726ec848a459d
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14785"
+    uid: 36238661-0e7c-4d04-8ec0-1221f57bb3a9
+  reason: TerminationGracefulTerminationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-p6s8s
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10882"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-75f48f484b-sslr2
+    to ip-10-0-83-140.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver-75f48f484b-sslr2.178726d69b960589
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10892"
+    uid: e5f60c8c-9027-4e47-b71d-2f4ac86c5a85
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:08Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10898"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:08Z"
+  message: Add eth0 [10.129.0.47/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:08Z"
+    name: apiserver-75f48f484b-sslr2.178726d6bf374eb0
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10936"
+    uid: 4b955a5e-f0f7-41d7-9ebe-5fd93c0866d5
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:08Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:08Z"
+  message: Pulling image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:08Z"
+    name: apiserver-75f48f484b-sslr2.178726d6c0da8cd2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10941"
+    uid: 4899556f-93f1-4900-a13d-0931faa18513
+  reason: Pulling
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:10Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:10Z"
+  message: Successfully pulled image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    in 1.766s (1.766s including waiting)
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:10Z"
+    name: apiserver-75f48f484b-sslr2.178726d72a2357d3
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11012"
+    uid: 78142d8e-3f5e-4d74-9c23-26870bc2ea61
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:10Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:10Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:10Z"
+    name: apiserver-75f48f484b-sslr2.178726d7318d118f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11019"
+    uid: ba58049e-3714-4770-81b3-91e3cb27c4d6
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:10Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:10Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:10Z"
+    name: apiserver-75f48f484b-sslr2.178726d73391e707
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11034"
+    uid: 80593a6a-4e96-4661-b8a6-98de816611d0
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-sslr2.178726d758505590
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11074"
+    uid: b14700b1-2929-4e36-bf49-5ab5ddf2b69b
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-sslr2.178726d760b34259
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11084"
+    uid: 0d0d4a26-89ca-49db-a7f9-2aa7fff0d77f
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-sslr2.178726d761b492db
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11085"
+    uid: 70623d13-f849-4f0f-9ec9-be13e4e60b0a
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:55Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10887"
+    uid: f1b43d9e-cd36-4df9-adec-bc7425c1d321
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:55Z"
+  message: Stopping container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-75f48f484b-sslr2.178726efb3f9cdd6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15187"
+    uid: 62fd2e1f-7b2a-4d59-9808-153194e0a601
+  reason: Killing
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Received signal to terminate, becoming unready, but keeping serving
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-75f48f484b-sslr2.178726efb52eb996
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15193"
+    uid: bbd759fa-3c95-4690-8a82-71db95bd8e47
+  reason: TerminationStart
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-sslr2
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: The minimal shutdown duration of 0s finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-75f48f484b-sslr2.178726efb5bf690e
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15199"
+    uid: 1a8244f6-835c-4c57-9146-579ce99da318
+  reason: TerminationMinimalShutdownDurationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-sslr2
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Server has stopped listening
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-75f48f484b-sslr2.178726efb65a03e3
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15201"
+    uid: 969df102-6f7b-466c-b12a-3298d6a912c2
+  reason: TerminationStoppedServing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-sslr2
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pre-shutdown hooks have been finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-75f48f484b-sslr2.178726efb70b6314
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15203"
+    uid: 740cf44d-f35b-4d08-b6df-9c946362baa0
+  reason: TerminationPreShutdownHooksFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-sslr2
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-sslr2
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pending requests processed
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:56Z"
+    name: apiserver-75f48f484b-sslr2.178726eff6fd1dfd
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15236"
+    uid: d3c11159-4d43-408f-b11f-32a2188a5c7f
+  reason: TerminationGracefulTerminationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-sslr2
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10883"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-75f48f484b-tnpfg
+    to ip-10-0-24-240.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver-75f48f484b-tnpfg.178726d69c5f4f4d
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10895"
+    uid: f86b0946-0475-4080-9a56-6bfb21996977
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:08Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10899"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:08Z"
+  message: Add eth0 [10.130.0.27/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:08Z"
+    name: apiserver-75f48f484b-tnpfg.178726d6bff442da
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10938"
+    uid: 0c916cab-7495-4bb7-9a50-21bed2a62017
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:08Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:08Z"
+  message: Pulling image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:08Z"
+    name: apiserver-75f48f484b-tnpfg.178726d6d79d6937
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10951"
+    uid: d3719421-9e95-4db7-9553-1c0c4fc91bdb
+  reason: Pulling
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:10Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:10Z"
+  message: Successfully pulled image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    in 1.904s (1.904s including waiting)
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:10Z"
+    name: apiserver-75f48f484b-tnpfg.178726d7491d3853
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11063"
+    uid: a46f00e4-49ce-4a1f-b86f-466a64729815
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:10Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:10Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:10Z"
+    name: apiserver-75f48f484b-tnpfg.178726d752588040
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11069"
+    uid: 50815dc5-41f2-4190-8e4b-f41ebcd72689
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-tnpfg.178726d754712967
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11072"
+    uid: 1211bc65-7e15-44af-9f8c-ba820b3846d3
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-tnpfg.178726d76984e8e9
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11091"
+    uid: 231cafa7-074b-429f-bf4b-74e542d97743
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-tnpfg.178726d772ef23e5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11098"
+    uid: 354c2d5d-42bf-4c3e-9634-8ca70258fbd0
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:11Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:11Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:11Z"
+    name: apiserver-75f48f484b-tnpfg.178726d773e9e345
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "11099"
+    uid: 8ff81e2e-0861-458d-8ba3-108357b02939
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:48Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10889"
+    uid: 6ffd9f73-a916-42f6-a726-cf8e4c782de1
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:48Z"
+  message: Stopping container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-75f48f484b-tnpfg.178726ee06525e13
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14951"
+    uid: a87ac3a2-0630-4282-ab24-7477733715c5
+  reason: Killing
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Received signal to terminate, becoming unready, but keeping serving
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-75f48f484b-tnpfg.178726ee0782c5b4
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14959"
+    uid: f637e1af-826b-4f40-86e5-5c8112377e0c
+  reason: TerminationStart
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-tnpfg
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: The minimal shutdown duration of 0s finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-75f48f484b-tnpfg.178726ee07dedb45
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14961"
+    uid: 730a285c-52e4-48d6-987d-9d7ed110a832
+  reason: TerminationMinimalShutdownDurationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-tnpfg
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Server has stopped listening
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-75f48f484b-tnpfg.178726ee08731745
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14968"
+    uid: 4589ac83-13da-4544-aeea-271f6db5fd7f
+  reason: TerminationStoppedServing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-tnpfg
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pre-shutdown hooks have been finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-75f48f484b-tnpfg.178726ee09583584
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14970"
+    uid: d97a6c3b-42cf-4765-b742-272d4304551c
+  reason: TerminationPreShutdownHooksFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-tnpfg
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-75f48f484b-tnpfg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pending requests processed
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:49Z"
+    name: apiserver-75f48f484b-tnpfg.178726ee475c22b2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14997"
+    uid: 9892cd1a-0f49-4764-9c79-4ca272381b39
+  reason: TerminationGracefulTerminationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-75f48f484b-tnpfg
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-75f48f484b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10870"
+    uid: c0b7cd8e-e84f-4e9e-a62b-b7a241b6b9d0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: 'Created pod: apiserver-75f48f484b-p6s8s'
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver-75f48f484b.178726d697a11513
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10878"
+    uid: a07a1fc7-0790-4dfb-b429-9c5321ea0759
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-75f48f484b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10870"
+    uid: c0b7cd8e-e84f-4e9e-a62b-b7a241b6b9d0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: 'Created pod: apiserver-75f48f484b-sslr2'
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver-75f48f484b.178726d699ec9967
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10888"
+    uid: bdda0cc3-f7e9-4137-a72f-2a2f94dbeb1a
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-75f48f484b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10870"
+    uid: c0b7cd8e-e84f-4e9e-a62b-b7a241b6b9d0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: 'Created pod: apiserver-75f48f484b-tnpfg'
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver-75f48f484b.178726d699ef998c
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10893"
+    uid: 5773f141-b4a5-4363-9936-05abf03ebea9
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:40Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-75f48f484b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14739"
+    uid: c0b7cd8e-e84f-4e9e-a62b-b7a241b6b9d0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:40Z"
+  message: 'Deleted pod: apiserver-75f48f484b-p6s8s'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-75f48f484b.178726ec442eed33
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14743"
+    uid: 434f2edd-9f62-49eb-bce6-3ecb57661f73
+  reason: SuccessfulDelete
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:48Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-75f48f484b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14942"
+    uid: c0b7cd8e-e84f-4e9e-a62b-b7a241b6b9d0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:48Z"
+  message: 'Deleted pod: apiserver-75f48f484b-tnpfg'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-75f48f484b.178726ee0619d181
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14947"
+    uid: 502738a7-1fe0-4d21-b09b-4738f81a401a
+  reason: SuccessfulDelete
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:55Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-75f48f484b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15178"
+    uid: c0b7cd8e-e84f-4e9e-a62b-b7a241b6b9d0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:55Z"
+  message: 'Deleted pod: apiserver-75f48f484b-sslr2'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-75f48f484b.178726efb3e160cc
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15182"
+    uid: 095fb423-ea73-4956-9355-0dc26cfdf69c
+  reason: SuccessfulDelete
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:13:26.200316Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20545"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 1 node(s) didn''t match Pod''s node affinity/selector,
+    2 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 3 node(s) didn''t
+    match pod anti-affinity rules. preemption: 0/6 nodes are available: 3 Preemption
+    is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-9b9557958-6lvzs.17872720b78f0151
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20549"
+    uid: cdfeff6b-a7ca-4705-8bba-70dbe6e64d84
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:13:31.028718Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20551"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 1 node(s) didn''t match Pod''s node affinity/selector,
+    2 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 3 node(s) didn''t
+    match pod anti-affinity rules. preemption: 0/6 nodes are available: 3 Preemption
+    is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:31Z"
+    name: apiserver-9b9557958-6lvzs.17872721d75a904f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20908"
+    uid: ee74d24a-c845-495d-8245-31416eceb352
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  series:
+    count: 2
+    lastObservedTime: "2023-09-22T07:13:41.882353Z"
+  source: {}
+  type: Warning
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-09-22T07:17:39.509275Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20551"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-9b9557958-6lvzs
+    to ip-10-0-24-240.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:39Z"
+    name: apiserver-9b9557958-6lvzs.1787275bb1f2fd12
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21839"
+    uid: 2fe0b884-47a7-4d68-be75-6129b1c54445
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-44-172
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:40Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21857"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:40Z"
+  message: Add eth0 [10.130.0.48/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:40Z"
+    name: apiserver-9b9557958-6lvzs.1787275bd6fc7879
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21868"
+    uid: 6c85bfca-50f9-457b-83a1-a747e9705b68
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:40Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21825"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:40Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:40Z"
+    name: apiserver-9b9557958-6lvzs.1787275bd99009e5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21872"
+    uid: d37b4a79-b1bd-45a5-946e-2a3cf5ec3c71
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:40Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21825"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:40Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:40Z"
+    name: apiserver-9b9557958-6lvzs.1787275be30ade9a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21878"
+    uid: 1160961f-1cbd-46be-8cbb-27f21aaf0d26
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:40Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21825"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:40Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:40Z"
+    name: apiserver-9b9557958-6lvzs.1787275be4aa2b1f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21879"
+    uid: 6072f3ac-642e-450b-92f8-b50ff61c060d
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:41Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21825"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:41Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:41Z"
+    name: apiserver-9b9557958-6lvzs.1787275c0cb40101
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21902"
+    uid: 10f0966d-e593-4f3f-9a9d-9a3b8c3359e2
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:41Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21825"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:41Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:41Z"
+    name: apiserver-9b9557958-6lvzs.1787275c1571058b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21908"
+    uid: 6938c208-057b-40d6-bd6f-14aa3bfa34bf
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:17:41Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-6lvzs
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21825"
+    uid: b3b0fa30-ec4a-4028-8f9a-8950ebbcf596
+  kind: Event
+  lastTimestamp: "2023-09-22T07:17:41Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:17:41Z"
+    name: apiserver-9b9557958-6lvzs.1787275c16843684
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21909"
+    uid: 34777927-6ed5-4cce-8767-4f7835de28f2
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:12:04.765640Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16921"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: null
+  message: '0/4 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
+    }, 3 node(s) didn''t match pod anti-affinity rules. preemption: 0/4 nodes are
+    available: 1 Preemption is not helpful for scheduling, 3 node(s) didn''t match
+    pod anti-affinity rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:04Z"
+    name: apiserver-9b9557958-g75hv.1787270dc1ac724b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17480"
+    uid: d2a046b1-4a8e-495e-8841-95ddf50286d3
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:12:06.287005Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17479"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: null
+  message: '0/4 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
+    }, 3 node(s) didn''t match pod anti-affinity rules. preemption: 0/4 nodes are
+    available: 1 Preemption is not helpful for scheduling, 3 node(s) didn''t match
+    pod anti-affinity rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:06Z"
+    name: apiserver-9b9557958-g75hv.1787270e1c5aa44a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17531"
+    uid: 1e18e8a6-4154-49a9-8b47-94db8a50ec35
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  series:
+    count: 2
+    lastObservedTime: "2023-09-22T07:12:08.559405Z"
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:13:00.002527Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "18149"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: null
+  message: '0/5 nodes are available: 1 node(s) didn''t match Pod''s node affinity/selector,
+    1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 3 node(s) didn''t
+    match pod anti-affinity rules. preemption: 0/5 nodes are available: 2 Preemption
+    is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:00Z"
+    name: apiserver-9b9557958-g75hv.1787271a9e0c7792
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "19335"
+    uid: f6fe116b-6821-4a53-ac83-a49aed1640c1
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:13:10.335015Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "19336"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 1 node(s) didn''t match Pod''s node affinity/selector,
+    2 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 3 node(s) didn''t
+    match pod anti-affinity rules. preemption: 0/6 nodes are available: 3 Preemption
+    is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:10Z"
+    name: apiserver-9b9557958-g75hv.1787271d05e9bc86
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20167"
+    uid: 8b4822a4-1c12-4d97-a361-9d713714de83
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-09-22T07:13:20.346239Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20168"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-9b9557958-g75hv
+    to ip-10-0-44-172.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:20Z"
+    name: apiserver-9b9557958-g75hv.1787271f5aa0eca2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20388"
+    uid: ed956b0c-2ef8-496a-91de-4507efd058b6
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:20Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20390"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:20Z"
+  message: Add eth0 [10.128.0.46/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:20Z"
+    name: apiserver-9b9557958-g75hv.1787271f7da8d1bd
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20418"
+    uid: 2bcec3bf-ca74-488f-8b13-d0b89568167c
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:20Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20387"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:20Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:20Z"
+    name: apiserver-9b9557958-g75hv.1787271f7f84e1fe
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20420"
+    uid: 95d4ddc6-fe13-45e4-b6f9-e3729249ae94
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20387"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:21Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:21Z"
+    name: apiserver-9b9557958-g75hv.1787271f880b82b5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20423"
+    uid: 2f53d040-8d8d-45db-8130-a253fa35bcda
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20387"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:21Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:21Z"
+    name: apiserver-9b9557958-g75hv.1787271f8a8348e6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20424"
+    uid: 5511f623-2f22-4c5a-ba57-a4f3c0552ef8
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:22Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20387"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:22Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:22Z"
+    name: apiserver-9b9557958-g75hv.1787271fc0599b7b
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20441"
+    uid: 7233bce8-abea-48a5-b907-8353e59de03b
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:22Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20387"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:22Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:22Z"
+    name: apiserver-9b9557958-g75hv.1787271fc8571aed
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20448"
+    uid: ca9e314b-0b6c-45f3-84ed-4007db1c2f60
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:22Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-g75hv
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20387"
+    uid: 951e3233-bf72-49c0-abc5-9a22ca824d54
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:22Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:22Z"
+    name: apiserver-9b9557958-g75hv.1787271fca235d50
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20449"
+    uid: 9ab4b3e7-52b6-437f-976f-a21272b9b94b
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:18:16.858905Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22217"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) didn''t match pod anti-affinity rules. preemption: 0/6 nodes are available:
+    3 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-9b9557958-qrdt5.178727646429168d
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22237"
+    uid: 9d9b3116-d12d-4321-b209-56af9d4e348e
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-44-172
+  source: {}
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:18:18.521531Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22239"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: null
+  message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+    3 node(s) didn''t match pod anti-affinity rules. preemption: 0/6 nodes are available:
+    3 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:18Z"
+    name: apiserver-9b9557958-qrdt5.17872764c742bf6a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22429"
+    uid: 545dca3a-87f8-4287-8e0f-13fda9ecfbce
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-44-172
+  series:
+    count: 2
+    lastObservedTime: "2023-09-22T07:18:20.523232Z"
+  source: {}
+  type: Warning
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-09-22T07:19:20.563067Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22239"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-9b9557958-qrdt5
+    to ip-10-0-83-140.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:20Z"
+    name: apiserver-9b9557958-qrdt5.1787277339397daf
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22837"
+    uid: 5f71670f-5d58-47fe-8bdb-82c29767ed4c
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-44-172
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:20Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22839"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:20Z"
+  message: Add eth0 [10.129.0.61/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:20Z"
+    name: apiserver-9b9557958-qrdt5.17872773510d0c35
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22841"
+    uid: 2fcb68af-c9ed-48a6-8c91-b492ced3d2b6
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:20Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22836"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:20Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:20Z"
+    name: apiserver-9b9557958-qrdt5.1787277352e151e4
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22843"
+    uid: 259db72d-6350-4b96-b5ea-e90b1027bdc4
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22836"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:21Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:21Z"
+    name: apiserver-9b9557958-qrdt5.178727735bec6062
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22844"
+    uid: a4142401-505f-443a-95a6-67f32f32e2db
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22836"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:21Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:21Z"
+    name: apiserver-9b9557958-qrdt5.178727735f0a399c
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22845"
+    uid: 27335570-aff1-4896-8836-d61e49f1f6d3
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22836"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:21Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:21Z"
+    name: apiserver-9b9557958-qrdt5.1787277366c6cfdc
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22846"
+    uid: 66d6a195-d3cb-4170-a83b-ecc08d9d6519
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22836"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:21Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:21Z"
+    name: apiserver-9b9557958-qrdt5.178727736ed66714
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22851"
+    uid: ef41c26d-4843-4f0e-a4e7-3e7f94aa21fa
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:19:21Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-9b9557958-qrdt5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22836"
+    uid: d229f8cb-ef3b-42e4-a72f-3825cdb710df
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:21Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:21Z"
+    name: apiserver-9b9557958-qrdt5.178727737024abb3
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22852"
+    uid: d26fd121-d0f7-4fba-bd42-ee84de84b352
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:26Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-9b9557958
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16911"
+    uid: 7b150c90-a18b-4ed1-ab68-6e80a7585ea0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:11:26Z"
+  message: 'Created pod: apiserver-9b9557958-g75hv'
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:26Z"
+    name: apiserver-9b9557958.17872704bbd182d4
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16930"
+    uid: df2290e1-f789-4043-817f-6d3504e40b53
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:26Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-9b9557958
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20535"
+    uid: 7b150c90-a18b-4ed1-ab68-6e80a7585ea0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:26Z"
+  message: 'Created pod: apiserver-9b9557958-6lvzs'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-9b9557958.17872720b78e9d35
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20548"
+    uid: f420f17c-6534-470a-b14e-e1f4f9798045
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:16Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-9b9557958
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22159"
+    uid: 7b150c90-a18b-4ed1-ab68-6e80a7585ea0
+  kind: Event
+  lastTimestamp: "2023-09-22T07:18:16Z"
+  message: 'Created pod: apiserver-9b9557958-qrdt5'
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-9b9557958.17872764623f97d5
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22240"
+    uid: 54ef404b-53ee-4a6e-a4a3-69dd8c097f1e
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:40Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14753"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:40Z"
+  message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+    preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ec4598bed0
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14758"
+    uid: db989341-1c08-472c-a8e4-be839351813d
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:09:40.950330Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14753"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: null
+  message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+    preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ec459cfa69
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14760"
+    uid: 7538db68-cb1a-40b1-a4df-aee2ddf59bc4
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-09-22T07:09:42.248679Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14759"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-d8dbdfbc7-2vxdg
+    to ip-10-0-44-172.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ec93003cba
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14789"
+    uid: 7f5a034e-7841-48d3-9d5e-050e0f88ac53
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:42Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14759"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:42Z"
+  message: 'running Bind plugin "DefaultBinder": Operation cannot be fulfilled on
+    pods/binding "apiserver-d8dbdfbc7-2vxdg": pod apiserver-d8dbdfbc7-2vxdg is already
+    assigned to node "ip-10-0-44-172.us-east-2.compute.internal"'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ec932822a0
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14791"
+    uid: 3f5d9b85-7d9c-4eb1-aabe-84803e8b5006
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:42Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14793"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:42Z"
+  message: Add eth0 [10.128.0.36/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ecac2f6a6e
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14802"
+    uid: de4d6f3d-686c-488c-b932-2401aaac2dbe
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:42Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:42Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ecade71468
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14804"
+    uid: 8021b498-9566-42cc-b1aa-21d5f58fc311
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:42Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:42Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ecb6651387
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14808"
+    uid: aa0ac1c3-2bbf-45f4-8061-31e8bd0c1135
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:42Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:42Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ecb9a6bba0
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14825"
+    uid: ba3f1698-5ffd-4181-8050-1a1366d2ac09
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:43Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:43Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:43Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ecd7a7a6cd
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14855"
+    uid: 19964a7c-7fea-4db3-916a-30bade3a018a
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:43Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:43Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:43Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ece123a483
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14860"
+    uid: da6fcdbd-6cf6-438c-b3f4-23242c1740d1
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:43Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:43Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:43Z"
+    name: apiserver-d8dbdfbc7-2vxdg.178726ece2f02bd8
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14861"
+    uid: d4e942bd-a21e-4b08-ad0f-3ef6f0549d9e
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:42Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:11:42Z"
+  message: Stopping container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:42Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872708adeaef28
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17315"
+    uid: c9ba3b69-11e4-4060-b90c-cd15b692598e
+  reason: Killing
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 7
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:47Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:12:17Z"
+  message: |+
+    Readiness probe error: HTTP probe failed with statuscode: 500
+    body: [+]ping ok
+    [+]log ok
+    [+]etcd ok
+    [+]etcd-readiness ok
+    [+]informer-sync ok
+    [+]poststarthook/generic-apiserver-start-informers ok
+    [+]poststarthook/priority-and-fairness-config-consumer ok
+    [+]poststarthook/priority-and-fairness-filter ok
+    [+]poststarthook/storage-object-count-tracker-hook ok
+    [+]poststarthook/openshift.io-StartOAuthInformer ok
+    [+]poststarthook/openshift.io-StartUserInformer ok
+    [+]poststarthook/openshift.io-StartTokenTimeoutUpdater ok
+    [-]shutdown failed: reason withheld
+    readyz check failed
+
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:47Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872709c1d84d49
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17796"
+    uid: 8a5ca420-f02c-4ead-b85f-719ba0a1ae84
+  reason: ProbeError
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 7
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:47Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:12:17Z"
+  message: 'Readiness probe failed: HTTP probe failed with statuscode: 500'
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:47Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872709c1d8c369
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17797"
+    uid: 0dce2b90-97c6-4d7d-aa06-ca705ab1d64d
+  reason: Unhealthy
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: The minimal shutdown duration of 0s finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:21Z"
+    name: apiserver-d8dbdfbc7-2vxdg.1787271099dd97eb
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17857"
+    uid: 082531ea-70ed-44b2-8448-e71dfa68851d
+  reason: TerminationMinimalShutdownDurationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-2vxdg
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Server has stopped listening
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:22Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872711c4fbf793
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17858"
+    uid: bffebdb7-dd10-4c3e-8bfc-0ed5a2d02ee7
+  reason: TerminationStoppedServing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-2vxdg
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pre-shutdown hooks have been finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:22Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872711c55bf4ae
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17859"
+    uid: 1edb04a7-09e3-49f8-880f-256157041033
+  reason: TerminationPreShutdownHooksFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-2vxdg
+  type: Normal
+- apiVersion: v1
+  count: 2
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:12:22Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:12:27Z"
+  message: "Readiness probe error: Get \"https://10.128.0.36:8443/readyz\": dial tcp
+    10.128.0.36:8443: connect: connection refused\nbody: \n"
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:22Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872711e7b3ce41
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17978"
+    uid: 752e411a-9d9a-445f-b3b6-290ba6245bfe
+  reason: ProbeError
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 2
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:12:22Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-2vxdg
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14788"
+    uid: 2b4bc22d-6125-453b-b698-b787259291db
+  kind: Event
+  lastTimestamp: "2023-09-22T07:12:27Z"
+  message: 'Readiness probe failed: Get "https://10.128.0.36:8443/readyz": dial tcp
+    10.128.0.36:8443: connect: connection refused'
+  metadata:
+    creationTimestamp: "2023-09-22T07:12:22Z"
+    name: apiserver-d8dbdfbc7-2vxdg.17872711e7b454b9
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "17982"
+    uid: b12cfe4e-4956-4416-8edf-383b23c0fcef
+  reason: Unhealthy
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-44-172.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-44-172.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 2
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:55Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15191"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:56Z"
+  message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+    preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726efb522116a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15232"
+    uid: 598413f6-c0b6-416b-a8bc-4010d3e171f5
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Warning
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:09:55.706874Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15191"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: null
+  message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+    preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726efb52bf8c9
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15197"
+    uid: b3a3c320-c24d-4385-ac34-9413158ca5ea
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- action: Binding
+  apiVersion: v1
+  eventTime: "2023-09-22T07:09:57.204343Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15194"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: null
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-d8dbdfbc7-srfnx
+    to ip-10-0-83-140.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:57Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f00e6d96f6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15251"
+    uid: b7057435-0129-4bdd-9405-b121100b3484
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:57Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15253"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:57Z"
+  message: Add eth0 [10.129.0.49/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:57Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f031c48ff7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15263"
+    uid: 650a0ed5-68b1-4188-b210-8f5b5b8bcae5
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:57Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:57Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:57Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f03377feaf
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15265"
+    uid: d1b38724-f415-49a8-8734-2771730440f6
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:57Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:57Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:57Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f03a321c0a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15275"
+    uid: 60ec12d9-58a3-47ab-9b46-cbf2a6f05501
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:57Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:57Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:57Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f03c19dd27
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15279"
+    uid: bb7164da-4d4e-4d5e-a111-c23c32e356d1
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:58Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:58Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:58Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f056b94ca3
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15287"
+    uid: 91549a64-708c-435d-8091-89c3f1fdb004
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:58Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:58Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:58Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f05ecabecf
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15293"
+    uid: 4054816c-6760-405f-a74d-6c51a0ff5595
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:58Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:58Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:58Z"
+    name: apiserver-d8dbdfbc7-srfnx.178726f05fd3a906
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15294"
+    uid: 26f576e5-9ccf-44c2-a672-d7fe6dd65d71
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:16Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:18:16Z"
+  message: Stopping container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-d8dbdfbc7-srfnx.178727644508f996
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22136"
+    uid: d592abe4-efa9-44e7-8fde-a0d2dbfb2ab2
+  reason: Killing
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Received signal to terminate, becoming unready, but keeping serving
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-d8dbdfbc7-srfnx.17872764465ae596
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22135"
+    uid: 38b75158-43db-4168-88ba-0e0d532e7970
+  reason: TerminationStart
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-srfnx
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: The minimal shutdown duration of 0s finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-d8dbdfbc7-srfnx.178727644b680287
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22146"
+    uid: fd4dce7c-be70-4137-8b75-e539625c5ae5
+  reason: TerminationMinimalShutdownDurationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-srfnx
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Server has stopped listening
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-d8dbdfbc7-srfnx.1787276452b49915
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22155"
+    uid: fe0e5b54-929a-4d03-9464-dbebe6782057
+  reason: TerminationStoppedServing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-srfnx
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pre-shutdown hooks have been finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-d8dbdfbc7-srfnx.1787276454c4f522
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22171"
+    uid: 613fd795-19b8-4f38-afb9-c5f4b27cc462
+  reason: TerminationPreShutdownHooksFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-srfnx
+  type: Normal
+- apiVersion: v1
+  count: 10
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:17Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:19:02Z"
+  message: "Readiness probe error: Get \"https://10.129.0.49:8443/readyz\": dial tcp
+    10.129.0.49:8443: connect: connection refused\nbody: \n"
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:17Z"
+    name: apiserver-d8dbdfbc7-srfnx.178727648bb0860a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22786"
+    uid: 4ebf82eb-ae0a-465d-8948-6df82d8f0f6b
+  reason: ProbeError
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 9
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:17Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15250"
+    uid: fbe6b25b-33c6-4c1f-a0b7-5484401b0ff4
+  kind: Event
+  lastTimestamp: "2023-09-22T07:18:57Z"
+  message: 'Readiness probe failed: Get "https://10.129.0.49:8443/readyz": dial tcp
+    10.129.0.49:8443: connect: connection refused'
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:17Z"
+    name: apiserver-d8dbdfbc7-srfnx.178727648bb148b9
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22772"
+    uid: 65cdadf8-5fc6-4141-856e-aa6b8d51e906
+  reason: Unhealthy
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-83-140.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-83-140.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-srfnx
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pending requests processed
+  metadata:
+    creationTimestamp: "2023-09-22T07:19:16Z"
+    name: apiserver-d8dbdfbc7-srfnx.178727724b0345f3
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22826"
+    uid: 5800dd57-a793-4088-b0ea-66d724020737
+  reason: TerminationGracefulTerminationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-srfnx
+  type: Normal
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:09:48.507009Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14958"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: null
+  message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+    preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee0806be3f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14964"
+    uid: 1ab75273-f151-4179-a24e-65dc8fc7e357
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:48Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14958"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:48Z"
+  message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+    preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+    rules..'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee080b0f75
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14965"
+    uid: fb124e66-f009-474c-b645-f68bb8a242de
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:49Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14967"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:49Z"
+  message: Successfully assigned openshift-oauth-apiserver/apiserver-d8dbdfbc7-z92zl
+    to ip-10-0-24-240.us-east-2.compute.internal
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:49Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee53982519
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15015"
+    uid: 2ac9f3c5-fc70-471b-86bf-85c14efce211
+  reason: Scheduled
+  reportingComponent: default-scheduler
+  reportingInstance: ""
+  source:
+    component: default-scheduler
+  type: Normal
+- action: Scheduling
+  apiVersion: v1
+  eventTime: "2023-09-22T07:09:49.775885Z"
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14967"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: null
+  message: 'running Bind plugin "DefaultBinder": Operation cannot be fulfilled on
+    pods/binding "apiserver-d8dbdfbc7-z92zl": pod apiserver-d8dbdfbc7-z92zl is already
+    assigned to node "ip-10-0-24-240.us-east-2.compute.internal"'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:49Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee53a83f88
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15013"
+    uid: cf99ee2c-2297-4694-93e6-81af259cb8f7
+  reason: FailedScheduling
+  reportingComponent: default-scheduler
+  reportingInstance: default-scheduler-ip-10-0-24-240
+  source: {}
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15017"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Add eth0 [10.130.0.32/23] from ovn-kubernetes
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee6a9be0a6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15022"
+    uid: eaef650f-c49a-495d-acf3-d1d6e333a5c6
+  reason: AddedInterface
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: multus
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee6c2b93aa
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15024"
+    uid: 86440728-11d0-4e79-a9da-4ead9268c8f2
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Created container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee739c9860
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15028"
+    uid: d6898eec-75ca-4472-be1f-03f1a8f8c24a
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.initContainers{fix-audit-permissions}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Started container fix-audit-permissions
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee766c1d61
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15029"
+    uid: 24c86072-e444-4385-9913-2327adcb6bd7
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Container image "quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:d0f45dc91629933478f6727c1266d9361fa8a1704f0ebc66bd9ed96615732550"
+    already present on machine
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee84fcd04f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15037"
+    uid: cf1ee213-39ff-44f7-a852-ee88d8f16997
+  reason: Pulled
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Created container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee8d441a58
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15051"
+    uid: 359b8a07-1a29-40c2-9414-73b87f832672
+  reason: Created
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:50Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:50Z"
+  message: Started container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:50Z"
+    name: apiserver-d8dbdfbc7-z92zl.178726ee8e34d2be
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15052"
+    uid: 96f447b4-8c94-4b14-9674-32964b4a9f46
+  reason: Started
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:26Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:26Z"
+  message: Stopping container oauth-apiserver
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872720b4077608
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20537"
+    uid: 3bb7e9c8-92d2-47e1-8284-e14ffdff47c7
+  reason: Killing
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Received signal to terminate, becoming unready, but keeping serving
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872720b5c0e959
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20541"
+    uid: cf63269a-f3f1-4d04-b257-0ea313fc0836
+  reason: TerminationStart
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-z92zl
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: The minimal shutdown duration of 0s finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872720b6a83ff6
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20544"
+    uid: b88c6cfe-9fd5-498c-adc9-2ab0c25a6491
+  reason: TerminationMinimalShutdownDurationFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-z92zl
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: Server has stopped listening
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872720b739cb51
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20546"
+    uid: 172d23fe-a704-47c5-b6ed-81996708547e
+  reason: TerminationStoppedServing
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-z92zl
+  type: Normal
+- apiVersion: v1
+  eventTime: null
+  firstTimestamp: null
+  involvedObject:
+    apiVersion: v1
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+  kind: Event
+  lastTimestamp: null
+  message: All pre-shutdown hooks have been finished
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872720b7a28ac2
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20547"
+    uid: 14d09e24-8d51-4632-bff1-91262684f40c
+  reason: TerminationPreShutdownHooksFinished
+  reportingComponent: ""
+  reportingInstance: ""
+  source:
+    component: apiserver
+    host: apiserver-d8dbdfbc7-z92zl
+  type: Normal
+- apiVersion: v1
+  count: 10
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:30Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:14:15Z"
+  message: "Readiness probe error: Get \"https://10.130.0.32:8443/readyz\": dial tcp
+    10.130.0.32:8443: connect: connection refused\nbody: \n"
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:30Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872721a003dcf1
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21499"
+    uid: 5ee95847-35c3-4317-a0cb-3cd22b813ca0
+  reason: ProbeError
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 9
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:30Z"
+  involvedObject:
+    apiVersion: v1
+    fieldPath: spec.containers{oauth-apiserver}
+    kind: Pod
+    name: apiserver-d8dbdfbc7-z92zl
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15009"
+    uid: 9cbcdf23-0218-49d6-9e4d-67f097a37bf3
+  kind: Event
+  lastTimestamp: "2023-09-22T07:14:10Z"
+  message: 'Readiness probe failed: Get "https://10.130.0.32:8443/readyz": dial tcp
+    10.130.0.32:8443: connect: connection refused'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:30Z"
+    name: apiserver-d8dbdfbc7-z92zl.17872721a0045e1e
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "21474"
+    uid: cd23eb3b-f807-4ee1-bfc8-a68e56443b28
+  reason: Unhealthy
+  reportingComponent: kubelet
+  reportingInstance: ip-10-0-24-240.us-east-2.compute.internal
+  source:
+    component: kubelet
+    host: ip-10-0-24-240.us-east-2.compute.internal
+  type: Warning
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:40Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-d8dbdfbc7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14745"
+    uid: 746dd292-3771-4601-b70e-645f22082d48
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:40Z"
+  message: 'Created pod: apiserver-d8dbdfbc7-2vxdg'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver-d8dbdfbc7.178726ec45905aaa
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14755"
+    uid: 954d3414-5ccf-4c40-b646-eb5293ab484d
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:48Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-d8dbdfbc7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14954"
+    uid: 746dd292-3771-4601-b70e-645f22082d48
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:48Z"
+  message: 'Created pod: apiserver-d8dbdfbc7-z92zl'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver-d8dbdfbc7.178726ee07e8783f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14962"
+    uid: 85eaa77c-1391-4384-9f89-cabc1e4dc588
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:55Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-d8dbdfbc7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15186"
+    uid: 746dd292-3771-4601-b70e-645f22082d48
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:55Z"
+  message: 'Created pod: apiserver-d8dbdfbc7-srfnx'
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver-d8dbdfbc7.178726efb51b9b0d
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15192"
+    uid: af563387-a1a6-4cab-9a15-62467f2af78b
+  reason: SuccessfulCreate
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:25Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-d8dbdfbc7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16873"
+    uid: 746dd292-3771-4601-b70e-645f22082d48
+  kind: Event
+  lastTimestamp: "2023-09-22T07:11:25Z"
+  message: 'Deleted pod: apiserver-d8dbdfbc7-2vxdg'
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:25Z"
+    name: apiserver-d8dbdfbc7.17872704b56aa7aa
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16907"
+    uid: b3bac42e-8881-46b0-a61a-0b927e5d1e94
+  reason: SuccessfulDelete
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:26Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-d8dbdfbc7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20526"
+    uid: 746dd292-3771-4601-b70e-645f22082d48
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:26Z"
+  message: 'Deleted pod: apiserver-d8dbdfbc7-z92zl'
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver-d8dbdfbc7.17872720b3c8f7e7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20531"
+    uid: 795f2a13-8dab-4012-bffc-9326bd1fa98f
+  reason: SuccessfulDelete
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:16Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: ReplicaSet
+    name: apiserver-d8dbdfbc7
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22095"
+    uid: 746dd292-3771-4601-b70e-645f22082d48
+  kind: Event
+  lastTimestamp: "2023-09-22T07:18:16Z"
+  message: 'Deleted pod: apiserver-d8dbdfbc7-srfnx'
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver-d8dbdfbc7.1787276443a6fe0c
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22137"
+    uid: 577033f5-9f76-4c43-a03b-3531b7985c50
+  reason: SuccessfulDelete
+  reportingComponent: replicaset-controller
+  reportingInstance: ""
+  source:
+    component: replicaset-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:08:07Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10868"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:08:07Z"
+  message: Scaled up replica set apiserver-75f48f484b to 3
+  metadata:
+    creationTimestamp: "2023-09-22T07:08:07Z"
+    name: apiserver.178726d693c1f82f
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "10872"
+    uid: f330c635-f34f-46e3-a1db-33d8b2ff2167
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:40Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14732"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:40Z"
+  message: Scaled down replica set apiserver-75f48f484b to 2 from 3
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver.178726ec4396bf76
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14741"
+    uid: 4d797eb3-7bea-4a86-83f4-41057d5cbad3
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:40Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14736"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:40Z"
+  message: Scaled up replica set apiserver-d8dbdfbc7 to 1 from 0
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:40Z"
+    name: apiserver.178726ec44bb9c92
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14750"
+    uid: e2034312-9bd7-4a51-a37e-dff06d0ff09c
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:48Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14768"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:48Z"
+  message: Scaled down replica set apiserver-75f48f484b to 1 from 2
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver.178726ee05bc4a6d
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14943"
+    uid: eb6ea19e-67ec-4327-8a94-2d667d078b33
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:48Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14768"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:48Z"
+  message: Scaled up replica set apiserver-d8dbdfbc7 to 2 from 1
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:48Z"
+    name: apiserver.178726ee072c77fa
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14956"
+    uid: 5f1ebfc8-ce59-4f8c-8344-f00cfcf2280d
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:55Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14971"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:55Z"
+  message: Scaled down replica set apiserver-75f48f484b to 0 from 1
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver.178726efb3328ab3
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15179"
+    uid: 6e049d0e-87aa-4f25-af66-9adbd499312f
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:09:55Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "14971"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:09:55Z"
+  message: Scaled up replica set apiserver-d8dbdfbc7 to 3 from 2
+  metadata:
+    creationTimestamp: "2023-09-22T07:09:55Z"
+    name: apiserver.178726efb46292fe
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "15189"
+    uid: f11b353e-9e54-45e4-a9b2-926bd3018b86
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:25Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16439"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:11:25Z"
+  message: Scaled down replica set apiserver-d8dbdfbc7 to 2 from 3
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:25Z"
+    name: apiserver.17872704b1b4bd3a
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16889"
+    uid: 2458583b-e7a9-4109-8b07-b167766782d3
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:11:25Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16865"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:11:25Z"
+  message: Scaled up replica set apiserver-9b9557958 to 1 from 0
+  metadata:
+    creationTimestamp: "2023-09-22T07:11:25Z"
+    name: apiserver.17872704b8480de8
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16917"
+    uid: 543f67cb-349c-46bd-897c-a2de5f97ab96
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:26Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "16949"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:26Z"
+  message: Scaled down replica set apiserver-d8dbdfbc7 to 1 from 2
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver.17872720b2ef26fb
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20527"
+    uid: 7a78af04-d8fb-461e-aebd-9b8ecce567bf
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:13:26Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20530"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:13:26Z"
+  message: Scaled up replica set apiserver-9b9557958 to 2 from 1
+  metadata:
+    creationTimestamp: "2023-09-22T07:13:26Z"
+    name: apiserver.17872720b5a05762
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20540"
+    uid: 60389a3b-bc8a-4648-a262-01d309df917d
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:16Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "20553"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:18:16Z"
+  message: Scaled down replica set apiserver-d8dbdfbc7 to 0 from 1
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver.178727643e85a9ee
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22162"
+    uid: a74199b1-ed9f-4c87-9bb7-3f8292e196a9
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 1
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:18:16Z"
+  involvedObject:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apiserver
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22117"
+    uid: fd501f49-e580-4780-a186-9bc879fdf3ab
+  kind: Event
+  lastTimestamp: "2023-09-22T07:18:16Z"
+  message: Scaled up replica set apiserver-9b9557958 to 3 from 2
+  metadata:
+    creationTimestamp: "2023-09-22T07:18:16Z"
+    name: apiserver.1787276457ffd334
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "22241"
+    uid: f9a015bb-c1f0-4213-a033-ffcdf0feafb3
+  reason: ScalingReplicaSet
+  reportingComponent: deployment-controller
+  reportingInstance: ""
+  source:
+    component: deployment-controller
+  type: Normal
+- apiVersion: v1
+  count: 2
+  eventTime: null
+  firstTimestamp: "2023-09-22T07:06:34Z"
+  involvedObject:
+    apiVersion: policy/v1
+    kind: PodDisruptionBudget
+    name: oauth-apiserver-pdb
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "6066"
+    uid: b76861b7-ec2e-4a0c-a546-9f7dc06f0545
+  kind: Event
+  lastTimestamp: "2023-09-22T07:06:34Z"
+  message: No matching pods found
+  metadata:
+    creationTimestamp: "2023-09-22T07:06:34Z"
+    name: oauth-apiserver-pdb.178726c0ca3b9a76
+    namespace: openshift-oauth-apiserver
+    resourceVersion: "6070"
+    uid: 633f24dd-6108-454d-a236-40077f542c2f
+  reason: NoPods
+  reportingComponent: controllermanager
+  reportingInstance: ""
+  source:
+    component: controllermanager
+  type: Normal
+kind: List
+metadata:
+  resourceVersion: ""

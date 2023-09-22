@@ -1022,7 +1022,7 @@ func getResourceNamesForGroup(apiPrefix string, apiGroupInfo *APIGroupInfo, path
 // Eventf creates an event with the API server as source, either in default namespace against default namespace, or
 // if POD_NAME/NAMESPACE are set against that pod.
 func (s *GenericAPIServer) Eventf(eventType, reason, messageFmt string, args ...interface{}) {
-	t := metav1.Time{Time: time.Now()}
+	t := metav1.MicroTime{Time: time.Now()}
 	host, _ := os.Hostname() // expicitly ignore error. Empty host is fine
 
 	ref := *s.eventRef
@@ -1035,16 +1035,20 @@ func (s *GenericAPIServer) Eventf(eventType, reason, messageFmt string, args ...
 			Name:      fmt.Sprintf("%v.%x", ref.Name, t.UnixNano()),
 			Namespace: ref.Namespace,
 		},
-		InvolvedObject: ref,
-		Reason:         reason,
-		Message:        fmt.Sprintf(messageFmt, args...),
-		Type:           eventType,
-		Source:         corev1.EventSource{Component: "apiserver", Host: host},
+		InvolvedObject:      ref,
+		Reason:              reason,
+		Message:             fmt.Sprintf(messageFmt, args...),
+		Type:                eventType,
+		Source:              corev1.EventSource{Component: "apiserver", Host: host},
+		EventTime:           t,
+		ReportingController: s.APIServerID,
+		ReportingInstance:   s.ExternalAddress,
+		Action:              "shutdown",
 	}
 
 	klog.V(2).Infof("Event(%#v): type: '%v' reason: '%v' %v", e.InvolvedObject, e.Type, e.Reason, e.Message)
 
 	if _, err := s.eventSink.Create(e); err != nil {
-		klog.Warningf("failed to create event %s/%s: %v", e.Namespace, e.Name, err)
+		klog.Warningf("failed to create event %s/%s: %v, %#v", e.Namespace, e.Name, err)
 	}
 }
